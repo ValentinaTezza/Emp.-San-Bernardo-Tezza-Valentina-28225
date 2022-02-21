@@ -1,0 +1,138 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+.parrafo {
+  background-color: #86895d;
+  text-align: justify;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.parrafo h2 {
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.parrafo p {
+  font-weight: 600;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.parrafo li {
+  font-weight: 600;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.parrafo a {
+  padding-left: 25px;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 0px;
+}
+
+aside {
+  padding: 0px;
+  background-color: #86895d;
+}
+
+.contenedor-carrusel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+  margin: 0px;
+  padding-right: 0px;
+}
+
+.contenedor-carrusel .carousel {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding: 0px;
+  width: 100%;
+  margin: 0px;
+}
+
+.slide {
+  margin-top: 10px;
+}
+
+.slide img {
+  height: auto;
+  width: auto;
+}
+
+.fondocampo {
+  margin-top: 25px;
+}
+
+h2 a {
+  color: white;
+}
+
+h2 a a:hover {
+  color: cadetblue;
+  text-decoration: none;
+}
+
+.identidad {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  background-color: #273e7c;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 450;
+}
+
+footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+footer .logo {
+  height: 110px;
+}
+
+aside {
+  height: auto;
+  width: auto;
+  padding: 30px;
+  padding-left: 20px;
+  margin: 0px;
+}
+
+@media only screen and (min-width: 850px) {
+  .aside {
+    padding: 50px;
+    padding-top: 80px;
+  }
+  .img-plantacion {
+    height: 450px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
