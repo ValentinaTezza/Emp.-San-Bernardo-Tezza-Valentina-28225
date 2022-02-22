@@ -79,7 +79,7 @@ h2 a {
     padding-top: 50px;
     padding-bottom: 50px;
     color: white;
-    background-color: rgb(39, 62, 124);
+    background-color: #86895d;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 40px;
@@ -99,7 +99,11 @@ aside {
     width: auto;
     padding: 30px;
     padding-left: 20px;
-    margin: 0px;
+    margin-bottom: 20px;
+    h3{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 @media only screen and (min-width: 850px){
     .aside {
@@ -109,4 +113,121 @@ aside {
     .img-plantacion {
         height: 450px;
     }
+}
+.tabla {
+    text-align: center;
+    border: 2px black solid;
+    background-color: #86895d;
+    h2{
+        padding: 30px;
+        color: white;
+    }
+}
+.table {
+    background-color: white;
+}
+.parrafob {
+    @extend .parrafo;
+    color: white;
+    padding: 40px;
+    .parrafob-strong{
+        text-align: center;
+    }
+}
+#cabañas {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    .cabaña1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .cabaña2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 300px;
+    }
+    .cabaña3{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        width: 150px;
+    }
+    .cabaña4{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        width: 250px;
+    }
+}
+@media only screen and (min-width: 720px) and (max-width: 1024px){
+    #cabañas {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        .cabaña1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .cabaña2{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .cabaña3{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .cabaña4{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 719px){
+    #cabañas {
+        display: grid;
+        place-items: center;
+        align-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        .cabaña1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .cabaña2{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            width: 400px;
+        }
+        .cabaña3{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .cabaña4{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+    }
+}
+.socios{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    .socio1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .socio2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
+.carousel-item{
+    width: 100%;
+    height: 100vh;
+}
+.carousel-inner {
+    width: 100%;
+    height: 100vh;
 }
